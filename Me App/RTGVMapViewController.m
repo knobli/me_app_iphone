@@ -9,12 +9,14 @@
 #import "RTGVMapViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
+#import "AddressAnnotation.h"
 
 @interface RTGVMapViewController ()
 
 @end
 
 @implementation RTGVMapViewController
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,14 +30,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.mapView.delegate = self;
+    self.myData = [[RTGVMyData alloc] init];
+    // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     //[geocoder geocodeAddressString:@"350 5th Avenue New York, NY"
-    NSString *location = [NSString stringWithFormat:@"%@, %@, %@",
-                          [self.myData getField:Address],
-                          [self.myData getField:City],
-                          [self.myData getField:State]];
-    [geocoder geocodeAddressString:location
-                     completionHandler:^(NSArray *placemarks, NSError *error) {
+    
+    NSString *locationString = [NSString stringWithFormat:@"%@, %@, %@",
+                                [self.myData getField:Address],
+                                [self.myData getField:City],
+                                [self.myData getField:State]];
+    [geocoder geocodeAddressString:locationString
+                 completionHandler:^(NSArray *placemarks, NSError *error) {
                      
                      if (error) {
                          NSLog(@"Geocode failed with error: %@", error);
@@ -48,12 +59,17 @@
                          CLLocation *location = placemark.location;
                          CLLocationCoordinate2D coords = location.coordinate;
                          
-                         NSLog(@"Latitude = %f, Longitude = %f", 
+                         NSLog(@"Latitude = %f, Longitude = %f",
                                coords.latitude, coords.longitude);
+                         MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coords, 800, 800);
+                         [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
+                         AddressAnnotation *addressAnnot = [[AddressAnnotation alloc] initWithCoordinate:coords];
+                         [addressAnnot setTitle:locationString];
+                         [self.mapView addAnnotation:addressAnnot];
                      }
                  }
      ];
-	// Do any additional setup after loading the view.
+
 }
 
 - (void)didReceiveMemoryWarning

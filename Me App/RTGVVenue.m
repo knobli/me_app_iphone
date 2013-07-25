@@ -1,13 +1,13 @@
 //
-//  RTGVFoursquareViewController.h
+//  RTGVVenue.m
 //  Me App
 //
 //  Created by XCode Developer on 7/25/13.
 //  Copyright (c) 2013 Toni Raffael. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "RTGVVenue.h"
 
-@interface RTGVFoursquareViewController : UIViewController
+@implementation RTGVVenue
 
 @end

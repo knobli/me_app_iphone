@@ -8,7 +8,6 @@
 
 #import "RTGVTableViewController.h"
 #import "RTGVMyData.h"
-#import <Parse/Parse.h>
 #import <MobileCoreServices/UTCoreTypes.h>
 
 @interface RTGVTableViewController ()
@@ -47,17 +46,14 @@ BOOL newMedia = NO;
 {
     if ([self.navigationController.viewControllers indexOfObject:self] == NSNotFound) {
         
-        PFQuery *query = [PFQuery queryWithClassName:@"Profil"];
-        PFObject *profil = [query getFirstObject];
         NSArray *cells = self.tableView.visibleCells;
         for(int i = 0; i < cells.count - 1; i++){
             UITableViewCell *cell = [cells objectAtIndex:i];
             UITextField* textField = (UITextField *)[cell viewWithTag:2];
             NSString* value = textField.text;
             [self.myData setField:value withKey:[self.labels objectAtIndex:i]];
-            [profil setObject:value forKey:[self.parseLabels objectAtIndex:i]];
+            
         }
-        [profil saveInBackground];
     }
     [super viewWillDisappear:animated];
 }

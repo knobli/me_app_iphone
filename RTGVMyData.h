@@ -13,6 +13,7 @@ FOUNDATION_EXPORT NSString *const Address;
 FOUNDATION_EXPORT NSString *const City;
 FOUNDATION_EXPORT NSString *const State;
 FOUNDATION_EXPORT NSString *const Zip;
+FOUNDATION_EXPORT NSString *const Photo;
 
 @interface RTGVMyData : NSObject
 

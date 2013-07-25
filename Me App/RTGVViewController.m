@@ -25,32 +25,10 @@
 
 @implementation RTGVViewController
 
-- (RTGVMyData *)myData {
-    if(!_myData){
-        _myData = [[RTGVMyData alloc] init];
-        _myData.data = [NSMutableDictionary dictionary];
-        
-        PFQuery *query = [PFQuery queryWithClassName:@"Profil"];
-        PFObject *profil = [query getFirstObject];
-        [_myData setField:[profil objectForKey:@"name"] withKey:Name];
-        //_myData.name = @"Raffael Santschi";
-        [_myData setField:[profil objectForKey:@"address"] withKey:Address];
-        //_myData.address = @"1, Campus Dr";
-        [_myData setField:[profil objectForKey:@"city"] withKey:City];
-        //_myData.city = @"Allendale";
-        [_myData setField:[profil objectForKey:@"state"] withKey:State];
-        //_myData.state = @"Michigan";
-        [_myData setField:[profil objectForKey:@"zip"] withKey:Zip];
-        //_myData.zip = @"49401";
-        _myData.photo = [UIImage imageNamed:[profil objectForKey:@"photo"]];
-    }
-        
-    return _myData;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.myData = [[RTGVMyData alloc] init];
     //self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(print_Message)];
 	// Do any additional setup after loading the view, typically from a nib.
 }

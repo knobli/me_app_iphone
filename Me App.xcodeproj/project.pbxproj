@@ -33,8 +33,13 @@
 		AEBBA9C7179DC28C009845C6 /* RTGVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBBA9C6179DC28C009845C6 /* RTGVViewController.m */; };
 		AEBBA9CF179DC2F6009845C6 /* RTGVMyData.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBBA9CE179DC2F6009845C6 /* RTGVMyData.m */; };
 		AEBBA9D2179DC843009845C6 /* raffton.png in Resources */ = {isa = PBXBuildFile; fileRef = AEBBA9D1179DC843009845C6 /* raffton.png */; };
-		AEC6B64517A164DF00A8D82E /* RTGVFoursquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC6B64417A164DF00A8D82E /* RTGVFoursquareViewController.m */; };
 		AEC6B64817A1723500A8D82E /* RTGVTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC6B64717A1723500A8D82E /* RTGVTableViewCell.m */; };
+		AEC6B64E17A18DDA00A8D82E /* RTGVVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC6B64D17A18DDA00A8D82E /* RTGVVenue.m */; };
+		AEC6B65117A1904000A8D82E /* GVMyDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC6B65017A1903400A8D82E /* GVMyDownloader.m */; };
+		AEC6B65417A194CF00A8D82E /* RTGVFoursquareTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC6B65317A194CF00A8D82E /* RTGVFoursquareTableViewController.m */; };
+		AEC6B65617A196C300A8D82E /* nopicture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AEC6B65517A196C300A8D82E /* nopicture.jpg */; };
+		AEC6B65817A1A00900A8D82E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC6B65717A1A00900A8D82E /* MapKit.framework */; };
+		AEC6B65B17A1B45300A8D82E /* AddressAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC6B65A17A1B45300A8D82E /* AddressAnnotation.m */; };
 		AEDE89E917A14DFC0036C196 /* RTGVMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDE89E817A14DFC0036C196 /* RTGVMapViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -74,10 +79,18 @@
 		AEBBA9CD179DC2F6009845C6 /* RTGVMyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTGVMyData.h; path = ../RTGVMyData.h; sourceTree = "<group>"; };
 		AEBBA9CE179DC2F6009845C6 /* RTGVMyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTGVMyData.m; path = ../RTGVMyData.m; sourceTree = "<group>"; };
 		AEBBA9D1179DC843009845C6 /* raffton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = raffton.png; sourceTree = "<group>"; };
-		AEC6B64317A164DF00A8D82E /* RTGVFoursquareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTGVFoursquareViewController.h; sourceTree = "<group>"; };
-		AEC6B64417A164DF00A8D82E /* RTGVFoursquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTGVFoursquareViewController.m; sourceTree = "<group>"; };
 		AEC6B64617A1723500A8D82E /* RTGVTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTGVTableViewCell.h; sourceTree = "<group>"; };
 		AEC6B64717A1723500A8D82E /* RTGVTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTGVTableViewCell.m; sourceTree = "<group>"; };
+		AEC6B64C17A18DDA00A8D82E /* RTGVVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTGVVenue.h; sourceTree = "<group>"; };
+		AEC6B64D17A18DDA00A8D82E /* RTGVVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTGVVenue.m; sourceTree = "<group>"; };
+		AEC6B64F17A1903400A8D82E /* GVMyDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GVMyDownloader.h; sourceTree = "<group>"; };
+		AEC6B65017A1903400A8D82E /* GVMyDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GVMyDownloader.m; sourceTree = "<group>"; };
+		AEC6B65217A194CF00A8D82E /* RTGVFoursquareTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTGVFoursquareTableViewController.h; path = ../RTGVFoursquareTableViewController.h; sourceTree = "<group>"; };
+		AEC6B65317A194CF00A8D82E /* RTGVFoursquareTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTGVFoursquareTableViewController.m; path = ../RTGVFoursquareTableViewController.m; sourceTree = "<group>"; };
+		AEC6B65517A196C300A8D82E /* nopicture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nopicture.jpg; sourceTree = "<group>"; };
+		AEC6B65717A1A00900A8D82E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AEC6B65917A1B45300A8D82E /* AddressAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressAnnotation.h; sourceTree = "<group>"; };
+		AEC6B65A17A1B45300A8D82E /* AddressAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressAnnotation.m; sourceTree = "<group>"; };
 		AEDE89E717A14DFC0036C196 /* RTGVMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTGVMapViewController.h; sourceTree = "<group>"; };
 		AEDE89E817A14DFC0036C196 /* RTGVMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTGVMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,13 +100,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE746ADD17A054C200B015E3 /* CoreLocation.framework in Frameworks */,
+				AEC6B65817A1A00900A8D82E /* MapKit.framework in Frameworks */,
 				AE746AE917A054FC00B015E3 /* SystemConfiguration.framework in Frameworks */,
 				AE746AE717A054F300B015E3 /* StoreKit.framework in Frameworks */,
 				AE746AE517A054E800B015E3 /* Security.framework in Frameworks */,
 				AE746AE317A054DF00B015E3 /* QuartzCore.framework in Frameworks */,
 				AE746AE117A054D600B015E3 /* MobileCoreServices.framework in Frameworks */,
 				AE746ADF17A054CD00B015E3 /* libz.1.1.3.dylib in Frameworks */,
-				AE746ADD17A054C200B015E3 /* CoreLocation.framework in Frameworks */,
 				AEBBA9AF179DC28C009845C6 /* CoreGraphics.framework in Frameworks */,
 				AE746ADB17A054AC00B015E3 /* CFNetwork.framework in Frameworks */,
 				AE746AD917A054A200B015E3 /* AudioToolbox.framework in Frameworks */,
@@ -109,6 +123,7 @@
 		AEBBA99E179DC28C009845C6 = {
 			isa = PBXGroup;
 			children = (
+				AEC6B65717A1A00900A8D82E /* MapKit.framework */,
 				AEBBA9B0179DC28C009845C6 /* Me App */,
 				AEBBA9A9179DC28C009845C6 /* Frameworks */,
 				AEBBA9A8179DC28C009845C6 /* Products */,
@@ -146,8 +161,12 @@
 		AEBBA9B0179DC28C009845C6 /* Me App */ = {
 			isa = PBXGroup;
 			children = (
-				AEC6B64317A164DF00A8D82E /* RTGVFoursquareViewController.h */,
-				AEC6B64417A164DF00A8D82E /* RTGVFoursquareViewController.m */,
+				AEC6B65917A1B45300A8D82E /* AddressAnnotation.h */,
+				AEC6B65A17A1B45300A8D82E /* AddressAnnotation.m */,
+				AEC6B64617A1723500A8D82E /* RTGVTableViewCell.h */,
+				AEC6B64717A1723500A8D82E /* RTGVTableViewCell.m */,
+				AEC6B65217A194CF00A8D82E /* RTGVFoursquareTableViewController.h */,
+				AEC6B65317A194CF00A8D82E /* RTGVFoursquareTableViewController.m */,
 				AEDE89E717A14DFC0036C196 /* RTGVMapViewController.h */,
 				AEDE89E817A14DFC0036C196 /* RTGVMapViewController.m */,
 				AEBBA9D0179DC30A009845C6 /* Models */,
@@ -157,8 +176,6 @@
 				AEBBA9C5179DC28C009845C6 /* RTGVViewController.h */,
 				AEBBA9C6179DC28C009845C6 /* RTGVViewController.m */,
 				AEBBA9B1179DC28C009845C6 /* Supporting Files */,
-				AEC6B64617A1723500A8D82E /* RTGVTableViewCell.h */,
-				AEC6B64717A1723500A8D82E /* RTGVTableViewCell.m */,
 			);
 			path = "Me App";
 			sourceTree = "<group>";
@@ -166,6 +183,9 @@
 		AEBBA9B1179DC28C009845C6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AEC6B64F17A1903400A8D82E /* GVMyDownloader.h */,
+				AEC6B65017A1903400A8D82E /* GVMyDownloader.m */,
+				AEC6B65517A196C300A8D82E /* nopicture.jpg */,
 				AE7AE82A179F06D200997811 /* RTGVEditViewController.h */,
 				AE7AE82B179F06D200997811 /* RTGVEditViewController.m */,
 				AE7AE82D179F0C6D00997811 /* RTGVEditOverviewViewController.h */,
@@ -189,6 +209,8 @@
 			children = (
 				AEBBA9CD179DC2F6009845C6 /* RTGVMyData.h */,
 				AEBBA9CE179DC2F6009845C6 /* RTGVMyData.m */,
+				AEC6B64C17A18DDA00A8D82E /* RTGVVenue.h */,
+				AEC6B64D17A18DDA00A8D82E /* RTGVVenue.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -251,6 +273,7 @@
 				AEBBA9C1179DC28C009845C6 /* Default-568h@2x.png in Resources */,
 				AEBBA9C4179DC28C009845C6 /* MainStoryboard.storyboard in Resources */,
 				AEBBA9D2179DC843009845C6 /* raffton.png in Resources */,
+				AEC6B65617A196C300A8D82E /* nopicture.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEC6B65117A1904000A8D82E /* GVMyDownloader.m in Sources */,
 				AEBBA9B7179DC28C009845C6 /* main.m in Sources */,
 				AEBBA9BB179DC28C009845C6 /* RTGVAppDelegate.m in Sources */,
 				AEBBA9C7179DC28C009845C6 /* RTGVViewController.m in Sources */,
@@ -269,8 +293,10 @@
 				AE7AE82F179F0C6D00997811 /* RTGVEditOverviewViewController.m in Sources */,
 				AE746AD517A00A3D00B015E3 /* RTGVTableViewController.m in Sources */,
 				AEDE89E917A14DFC0036C196 /* RTGVMapViewController.m in Sources */,
-				AEC6B64517A164DF00A8D82E /* RTGVFoursquareViewController.m in Sources */,
 				AEC6B64817A1723500A8D82E /* RTGVTableViewCell.m in Sources */,
+				AEC6B64E17A18DDA00A8D82E /* RTGVVenue.m in Sources */,
+				AEC6B65417A194CF00A8D82E /* RTGVFoursquareTableViewController.m in Sources */,
+				AEC6B65B17A1B45300A8D82E /* AddressAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
