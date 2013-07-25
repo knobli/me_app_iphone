@@ -7,11 +7,15 @@
 //
 
 #import "RTGVAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation RTGVAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Parse setApplicationId:@"VOxdbBEqM8sv2fty6jyGjY9RmguhJ9oaupmU51ar"
+                  clientKey:@"vJnQpL8zLI0uZHPQuPZqjQU5HvQ6xPzLF1Ysg9XZ"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     // Override point for customization after application launch.
     return YES;
 }
