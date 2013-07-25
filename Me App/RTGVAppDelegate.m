@@ -11,6 +11,27 @@
 
 @implementation RTGVAppDelegate
 
+- (void) incrementNetworkActivity
+{
+    _networkActivityCounter += 1;
+}
+
+- (void) decrementNetworkActivity
+{
+    if (_networkActivityCounter > 0){
+        _networkActivityCounter -= 1;
+    }
+    if (_networkActivityCounter == 0) {
+        
+    }
+}
+
+- (void) resetNetworkActivity
+{
+    _networkActivityCounter = 0;
+    
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [Parse setApplicationId:@"VOxdbBEqM8sv2fty6jyGjY9RmguhJ9oaupmU51ar"
